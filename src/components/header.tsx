@@ -21,14 +21,14 @@ function Header({
         </div>
         <div className="flex items-center pl-10 w-[45%] justify-between">
           <Link
-            href="home"
+            href="/app/home"
             className={`text-black py-3 ${selected === "home" && "font-bold"}`}
             onClick={() => handleSelect("home")}
           >
             Home
           </Link>
           <Link
-            href="findJobs"
+            href="/app/findJobs"
             className={`text-black py-3 ${
               selected === "findJobs" && "font-bold"
             }`}
@@ -37,7 +37,7 @@ function Header({
             Find Jobs
           </Link>
           <Link
-            href="contracts"
+            href="/app/contracts"
             className={`text-black py-3 ${
               selected === "contracts" && "font-bold"
             }`}
@@ -46,7 +46,7 @@ function Header({
             My Contracts
           </Link>
           <Link
-            href="messages"
+            href="/app/messages"
             className={`text-black py-3 ${
               selected === "messages" && "font-bold"
             }`}
@@ -63,7 +63,7 @@ function Header({
         <Link href="savedJobs" className="text-black p-1 mr-4">
           <CiBookmark size={28} className="text-gray-700" />
         </Link>
-        <Link className="pr-1" href="freelancers">
+        <Link className="pr-1" href="freelancers/1234">
           <Image
             alt="profile"
             src="/profile.jpg"
